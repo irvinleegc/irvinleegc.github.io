@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://irvinleegc.github.io"
 twitter_username: 
 github_username:  irvinleegc
+disqus-shortname: irvinleegc
 
 # Build settings
 markdown: kramdown
