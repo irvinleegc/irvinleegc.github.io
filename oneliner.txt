@@ -1,0 +1,193 @@
+#=======================================================================================================
+#-------------------------------------------------------------------------------------------------------
+# Dr. Anthony G. Francis, Jr's One Line Program Repository - Version 1.0 - October 10, 2004
+#-------------------------------------------------------------------------------------------------------
+# Purpose:  Text file filled with one line programs
+# Author:   Dr. Anthony G. Francis, Jr.
+# Company:  Xivagent Scientific Consulting
+#-------------------------------------------------------------------------------------------------------
+# NOTES: This file uses shell syntax but is not designed to be executed as a whole.
+#-------------------------------------------------------------------------------------------------------
+# THE MICROPOETIC LICENSE v1.0 / Copyright (C) 2004 by Dr. Anthony G. Francis, Jr. (the Author)
+#
+# Permission is granted to everyone to use the following bits (incuding code, data, docs, and
+#  this license), "AS IS", with no warranty, express or implied, for any purpose, provided that
+#  the user agrees to absolve the Author of any claim, damages or other liability, including actions 
+#  of contract or tort, resulting from any use of these bits in any way, and provided that the
+#  the authorship of these bits are not misrepresented through explicit claim or omission.
+#
+# In the event of a dispute, the user agrees to interpret the text of this license as if it included
+#  the terms of the latest version of THE POETIC LICENSE (http://www.dresan.com/software/poetic.txt).
+#-------------------------------------------------------------------------------------------------------
+#=======================================================================================================
+
+#=======================================================================================================
+# 1. PERL ONE-LINERS
+#=======================================================================================================
+#-----------------------------------------------------------------------
+# Display Table of WORD in FILE*
+#-----------------------------------------------------------------------
+# Displays all occurrences of WORD in the FILE*(s), formatting as a
+# table with filename, line number and line text.
+#-----------------------------------------------------------------------
+# Simple example for short filenames.  Seems to cause trouble in Windows command line
+grep -in WORD FILE* | perl -ne 'if (/(.*):(\d*):\s*(.*)\s*/) { print $1, " " x (20 - length $1), " ", "0" x (5 - length $2), $2, "   $3\n"}'
+
+# More complex example using egrep and assuming longer filenames (note the '50' in the spaces computation)
+# Also seems to cause trouble in Windows command line.
+egrep -in '(Alabama|"AL")' *.asp | perl -ne 'if (/(.*):(\d*):\s*(.*)\s*/) { print $1, " " x (50 - length $1), " ", "0" x (5 - length $2), $2, "   $3\n"}'
+
+#-----------------------------------------------------------------------
+# Text Trimming and Processing
+#-----------------------------------------------------------------------
+# Trim excess blanks from beginning to end of line. A Cygwin creature.
+# cat myfile | perl -ne 'if (/^\s*(.*?)\s*$/s) { print "${1}\n" }' # seems less efficient in practice
+perl -ne 'if (/^\s*(.*?)\s*$/s) { print "${1}\n" }' < temp.txt
+
+# Don't forget the tr command! Not that we have use right now...
+
+
+#=======================================================================================================
+# 2. Unix FIND one liners 
+#=======================================================================================================
+find .					# Find all files under .
+find . -type d				# Find all subdirectories.
+find . -iregex ".*\(bas\|cls\|frm\)"	# Find all Visual Basic code files in a directory
+					# -iregex matches a case-insensitive regular expression
+					# backslashes necessary to protect special characters at shell
+
+# Find all VB files containing a given string
+# Note you must escape the {} and the ; because we are at the shell
+find . -iregex ".*\(bas\|cls\|frm\)" -exec grep NIBRS \{\} \;					
+
+# Find all VB files containing comment lines
+# Note you must escape the {} and the ; because we are at the shell
+find . -iregex ".*\(bas\|cls\|frm\)" -exec egrep "^*'" \{\} \;
+
+# Find all VB files containing NON comment lines
+# Note you must escape the {} and the ; because we are at the shell
+find . -iregex ".*\(bas\|cls\|frm\)" -exec egrep -v "^*'" \{\} \;
+
+# Find all VB files containing NON comment, NON blank lines in a directory
+find . -iregex ".*\(bas\|cls\|frm\)" -exec egrep -v "^*'|^[[:space:]]*$" \{\} \;
+
+# Count the code in a directory hierarchy
+find . -iregex ".*\(bas\|cls\|frm\)" -exec egrep -v "^*'|^[[:space:]]*$" \{\} \; | wc
+
+
+#=======================================================================================================
+# 3. Grep one liners 
+#=======================================================================================================
+grep -R "Stuff" .			# Find all files in a subdirectory containing "Stuff"
+grep -R --include "*.asp" "Stuff" .	# Find all .asp files in a directory tree containing "Stuff"
+
+grep '"b"' * | cut -d":" -f1 		# List of all filenames matching a pattern
+
+# Long list of all the files matching a pattern
+for file in $(grep '"b"' * | cut -d":" -f1 ); do ls -l $file; done
+
+# Compare files with one extension with VI modified versions, redirecting diff error if ~ file not found
+for file in *.cmd; do echo; echo $file; diff $file ${file}~ 2>&1; done > diffs.txt
+
+#=======================================================================================================
+# 4. File/Directory one liners
+#=======================================================================================================
+ls -R					# Recursively list contents of subdirectories
+
+
+					# Two different formats for the subdirectories of just this directory
+ls | xargs perl -e '@ARGV = grep( -d $_ , @ARGV); print "@ARGV\n"'	
+ls | xargs perl -e '@ARGV = grep( -d $_ , @ARGV); while($dir = shift @ARGV) { print "$dir\n" }'
+
+# Subdirectory sizes
+du					# Show sizes of subdirectories
+du -h					# Make the sizes more humanly readable
+du -h --max-depth=1			# Display the sizes of just one level of subdirectories
+du -h --summarize * 			# Summarize the elements of this directory, humanly
+
+# File Sizes
+
+# Reversing a file
+tac temp.txt > pmet.txt			# Reverse the order of the lines in a file using 'tac' (cat reverse) command
+rev temp.txt > pmet.txt			# Reverse the text in each line of a file using 'rev' (reverse line) command
+
+# cat all the files in a directory
+for file in myDir/* ; do echo; echo "---$file--" ; cat $file ; done
+
+# Sum the line counts of all the code files in a directory
+find . -iregex ".*\(java\|html\|txt\)" -exec wc \{\} \; | gawk '{ print $1 "\t" $4; sum += $1 } END { print "--------"; print sum "\tTOTAL" }'
+
+
+#=======================================================================================================
+# 5. Path Parsing One Liners
+#=======================================================================================================
+# Can't use EXPR because it only matches at the beginning of a line.
+if echo $PATH | grep -q "Program" ; then echo "present"; else echo "absent"; fi
+if echo $PATH | grep -q "\." ; then echo ". present"; else export PATH=".:$PATH"; echo "added . to path";  fi
+perl -e "print \"$PATH\" =~ /Program/"	# not good for testing
+
+# See if a variable exists
+if [ "$fram" ]; then echo "found a fram"; else echo "no fram here"; fi
+
+# Use Python to print all the variable names on one line - note this can futz up some pathnames
+python -c "for path in '%CLASSPATH%'.split(';'): print path"
+
+# Use Perl to do the same thing
+perl -e "print join qq(\n), split /;/, '%CLASSPATH%' "
+perl -e "foreach (split ';', '%CLASSPATH%') { print; print qq(\n) }"
+
+#=======================================================================================================
+# 6. AWK File Parsing One Liners
+#=======================================================================================================
+# Get a sorted list of values from the first column of a tab-separated file
+gawk '{ print $1 }' tabfile.txt | sort | uniq > firstcolvals.txt
+
+# Get a sorted list of column values from a file with fields split by dashes
+gawk 'BEGIN { FS="--" } ; { print $1 }' data.txt | sort | uniq > firstcolvals.txt
+
+# Reverse fields in a tab-separated file and sort it by the numeric field
+gawk 'BEGIN { FS="\t" } ; { print $2 "\t" $1 }' data.txt  | sort -nr > sorted.txt
+
+# Reverse fields in a tab-separated file and sort it by the numeric field
+gawk 'BEGIN { FS="\t" } ; { print $2 "\t" $1 }' data.txt  | sort -nr > sorted.txt
+
+#
+gawk '{ freq[$0]++ } ; END { sort = "sort --key=2" ; for (word in freq) printf "%s\t%d\n", word, freq[word] | sort ; close(sort) }' allprops.txt
+
+# Extract the first field, collect the count of it, and output the word, counts sorted by name
+gawk 'BEGIN { FS="--" } ; { freq[$1]++ } ; END { sort = "sort" ; for (word in freq) printf "%s\t%d\n", word, freq[word] | sort ; close(sort) }' data.txt
+
+# Extract the first field, collect the count of it, and output the word, counts sorted by count
+gawk 'BEGIN { FS="--" } ; { freq[$1]++ } ; END { sort = "sort --key=2 -nr" ; for (word in freq) printf "%s\t%d\n", word, freq[word] | sort ; close(sort) }' data.txt
+
+
+#=======================================================================================================
+# 7. DOS Fu One Liners
+#=======================================================================================================
+#-----------------------------------------------------------------------
+# 7a. Windows Equivalents of Common UNIX Commands
+#-----------------------------------------------------------------------
+# Iterate through all the lines in a file, doing something
+for /F %i IN (lines.txt) DO echo %i
+
+#-----------------------------------------------------------------------
+# 7b. OTHER CODE SNIPPETS
+#-----------------------------------------------------------------------
+# Windows Prompt
+prompt $P $C$D$T$F: $_$+$G$S
+
+
+#=======================================================================================================
+# Z. ONE-LINES WRITTEN BY OTHER AUTHORS
+#=======================================================================================================
+#-----------------------------------------------------------------------
+# FROM "Perl One-Liners" by Jeff Bay jlb0170@yahoo.com
+#-----------------------------------------------------------------------
+# Find the sum of the sizes of the non-directory files in a directory
+ls -lAF | perl -e 'while (<>) { next if /^dt/; $sum += (split)[4] } print "$sum\n"'
+
+#-----------------------------------------------------------------------
+# Other One-Liners
+#-----------------------------------------------------------------------
+# Find all Perl modules - From Active Perl documentation
+find `perl -e 'print "@INC"'` -name '*.pm' -print
