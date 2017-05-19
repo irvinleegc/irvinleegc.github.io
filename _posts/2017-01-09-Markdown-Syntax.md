@@ -12,12 +12,14 @@ Use `` # `` to indicate header
 **Example in Markdown:**
 ```Markdown
 `#header1` 
-```
-#header 1  
 `####header4####`  
-####header4####  
+
 `header2`  
 `-------`  
+```
+
+#header 1  
+####header4####  
 header2  
 -------  
 
@@ -33,7 +35,9 @@ header2
 Following paragraphs starts here.
 
 **Example in HTML:**
+``` HTML
 `<p>Following paragraphs</p> <p>starts here.</p>`
+```
 <p>Following paragraphs</p> <p>starts here.</p>
 
 ### **Emphasis**
@@ -46,24 +50,27 @@ Use two tildes <code>~~ </code> for ~~strikethrough~~.
 `**bold**` **bold** `__bold__` __bold__
 `` ~~ strike~~ `` ~~strike~~
 
-
-**Example in HTML: **
-``<em> italic </em>`` <em> italic </em>
-``<strong> bold </strong>`` <strong> bold </strong>
+**Example in HTML:**
+``` HTML
+``<em> italic </em>`` 
+``<strong> bold </strong>`` 
+```
+<em> italic </em>
+<strong> bold </strong>
 
 But if you surround an `*` or `_` with spaces, it’ll be treated as a literal asterisk or underscore. To place an asterisk or underscore without the space, use the escape backslash character `\`
 
-**Example in Markdown:**
-` This is an asterisk * and this is an underscore _ `
-This is an asterisk * and this is an underscore _ 
+**Example in Markdown:**  
+` This is an asterisk * and this is an underscore _ `  
+This is an asterisk * and this is an underscore _  
 
 `These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_ `
 These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and **bold** and _italic_
 
 ### **Table**
-Use pipe `|` to indicate column in table.
-Use minumal 3 dashes `---` to indicate header
-Use colon `:` to indicate alignment
+Use pipe `|` to indicate column in table.  
+Use minumal 3 dashes `---` to indicate header.  
+Use colon `:` to indicate alignment.  
 
 **Example in Markdown:**
 <code>|No|Name|Team|
@@ -71,6 +78,7 @@ Use colon `:` to indicate alignment
 |1|John|A|
 |2|\*Jane\*|B|
 |3|Jake|\**F**|</code>
+
 |No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
@@ -79,7 +87,7 @@ Use colon `:` to indicate alignment
 
 
 ### **List**
-Use multiple rows of `*` `+` `-`to indicate a bullet list.
+Use multiple rows of `*` `+` `-`to indicate a bullet list.  
 **Example in Markdown:**
 <code>To do list:
  + learn markdown
@@ -91,30 +99,35 @@ To do list:
  - write a blog with markdown
 
 **Example in HTML:**
+```HTML
 `` <ul><li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li></ul>``
-><ul><li>learn markdown</li>
+```
+<ul><li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li></ul>
  
-Use multiple rows of numbers (in or our of sequence) to indicate a numbered list.
-**Example in Markdown:**
+Use multiple rows of numbers (in or our of sequence) to indicate a numbered list.  
+**Example in Markdown:**  
 <code>To do list:
  1. learn markdown
  5. write a post with markdown
- 3. write a blog with markdown</code>
+ 3. write a blog with markdown</code>  
+ 
 To do list:
  1. learn markdown
  3. write a post with markdown
  3. write a blog with markdown
 
 **Example in HTML:**
-`<ol>
+```HTML
+<ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li>
-</ol>`
+</ol>
+```
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
@@ -124,13 +137,15 @@ To do list:
 ### **Code**
 To indicate codes, use backtick <code>`</code>
 
-**Example in Markdown:**
-This is a \`main()\` function.
-This is a `main()` function.
+**Example in Markdown:**  
+This is a \`main()\` function.  
+This is a `main()` function.  
 
-**Example in HTML:**
+**Example in HTML:**  
+```HTML
 `This is a <code>main()</code> function.`
-This is a <code>main()</code> function.
+```
+This is a <code>main()</code> function.  
 
 Use double backticks to indicate a real a backtick `` ` ``. Any backtick within the double backticks will be treated as an actual backtick.
 
@@ -219,15 +234,15 @@ email me at <email@address.com>
 ### **Backslash Escape**
 Use a backslash `\` before these special character to actually indicate that you are typing these characters.
 
-\\ backslash 
-\` backtick
-\* asterisk
-\_ underscore
-\{\} curly braces
-\[\] square brackets
-\(\) parentheses
-\# hash mark
-\+ plus sign
-\- minus sign (hyphen)
-\. dot
-\! exclamation mark
+\\ backslash  
+\` backtick  
+\* asterisk  
+\_ underscore  
+\{\} curly braces  
+\[\] square brackets  
+\(\) parentheses  
+\# hash mark  
+\+ plus sign  
+\- minus sign (hyphen)  
+\. dot  
+\! exclamation mark  
