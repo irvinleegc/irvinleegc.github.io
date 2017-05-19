@@ -9,8 +9,10 @@ categories: posts
 ### **Header and paragraph**
 Use `` # `` to indicate header
 
-**Example in Markdown:**  
-`#header1`  
+**Example in Markdown:**
+```Markdown
+`#header1` 
+```
 #header 1  
 `####header4####`  
 ####header4####  
@@ -38,13 +40,12 @@ Following paragraphs starts here.
 Use single asterisk `` ` `` or single underscore ` _ `for _italic_.
 Use double asterisks <code>``</code> or double underscores <code>__</code > for **bold**.
 Use two tildes <code>~~ </code> for ~~strikethrough~~.
-Use `^` for superscribe
 
 **Example in Markdown:**  
 `*italic*` *italic*  `_italic_` _italic_  
 `**bold**` **bold** `__bold__` __bold__
 `` ~~ strike~~ `` ~~strike~~
-E=MC^2
+
 
 **Example in HTML: **
 ``<em> italic </em>`` <em> italic </em>
