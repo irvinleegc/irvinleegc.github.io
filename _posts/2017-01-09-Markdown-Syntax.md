@@ -13,7 +13,6 @@ Use `` # `` to indicate header
 ```Markdown
 `#header1` 
 `####header4####`  
-
 `header2`  
 `-------`  
 ```
@@ -29,21 +28,20 @@ header2
 ```
 <h2>header2</h2>
 
+**Example in Markdown:**  
+`Following paragraphs starts here.`  
+Following paragraphs starts here.  
 
-**Example in Markdown:**
-`Following paragraphs starts here.`
-Following paragraphs starts here.
-
-**Example in HTML:**
+**Example in HTML:**  
 ``` HTML
 `<p>Following paragraphs</p> <p>starts here.</p>`
 ```
 <p>Following paragraphs</p> <p>starts here.</p>
 
-### **Emphasis**
-Use single asterisk `` ` `` or single underscore ` _ `for _italic_.
-Use double asterisks <code>``</code> or double underscores <code>__</code > for **bold**.
-Use two tildes <code>~~ </code> for ~~strikethrough~~.
+### **Emphasis**  
+Use single asterisk `` ` `` or single underscore ` _ `for _italic_.  
+Use double asterisks <code>``</code> or double underscores <code>__</code > for **bold**.  
+Use two tildes <code>~~ </code> for ~~strikethrough~~.  
 
 **Example in Markdown:**  
 `*italic*` *italic*  `_italic_` _italic_  
@@ -181,48 +179,47 @@ Use `>` to indicate quotes / citations / indent.
 
 URLs it self will automatically be converted into links, alternatively, we can create link using angle brackets `< >`.
 
-**Example in Markdown:**
-`http://www.google.com`
+**Example in Markdown:**  
+```Markdown
 http://www.google.com
-
-`www.google.com`
 www.google.com
-
-`[Google](www.google.com) inline link`
 [Google](www.google.com) inline link
-
-`[Google](www.google.com "Search Engine") inline link with title`
 [Google](www.google.com "Search Engine") inline link with title
 
-<code>Google link within number reference\[1]
-\[1]: www.google.com </code>
 Google link within number reference[1]
+[1]: www.google.com
 
-[1]: http://www.google.com
-
-<code>\[Google] link within itself
-\[Google]: www.google.com </code>
 [Google] link within itself
-
 [Google]: www.google.com
 
-<code>\[anylink] as reference is case insensitive
-\[AnYLink]: www.google.com </code>
-[anylink] as reference is case insensitive
+[anylink] as reference is case insensitive  
+[AnYLink]: www.google.com  
 
+```
+
+http://www.google.com  
+www.google.com  
+[Google](www.google.com) inline link  
+[Google](www.google.com "Search Engine") inline link with title  
+Google link within number reference[1]  
+[1]: http://www.google.com  
+[Google] link within itself  
+[Google]: www.google.com  
+[anylink] as reference is case insensitive
 [AnYLink]: www.google.com
 
-**Example in HTML:**
-``<a href="http://www.google.com/">link</a>``
+**Example in HTML:**  
+```HTML
+<a href="http://www.google.com/">link</a>
+```
 <a href="http://www.google.com/">link</a>
 
+### **Email**  
+Create email address using angle brackets `< >`.  
 
-### **Email**
-Create email address using angle brackets `< >`.
-
-**Example in Markdown:**
-`` email me at <email@address.com> ``
-email me at <email@address.com>
+**Example in Markdown:**  
+`` email me at <email@address.com> ``  
+email me at <email@address.com>  
 
 ### **Emoji :smile:**
 <https://www.emoji.codes/>
