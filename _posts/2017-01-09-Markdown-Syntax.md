@@ -200,20 +200,21 @@ URLs it self will automatically be converted into links, alternatively, we can c
 
 **Example in Markdown:**  
 ```Markdown
-http://www.google.com
-www.google.com
-[Google](www.google.com) inline link
-[Google](www.google.com "Search Engine") inline link with title
+http://www.google.com  
+www.google.com  
+[Google](www.google.com) inline link  
+[Google](www.google.com "Search Engine") inline link with title  
+Google link within number reference[1]  
 
-Google link within number reference[1]
-[1]: www.google.com
+[1]: http://www.google.com  
 
-[Google] link within itself
-[Google]: www.google.com
+[Google] link within itself  
 
-[anylink] as reference is case insensitive  
-[AnYLink]: www.google.com  
+[Google]: www.google.com  
 
+[Anylink] as reference is case insensitive  
+
+[AnYLink]: www.google.com
 ```
 
 http://www.google.com  
@@ -228,7 +229,7 @@ Google link within number reference[1]
 
 [Google]: www.google.com  
 
-[anylink] as reference is case insensitive  
+[Anylink] as reference is case insensitive  
 
 [AnYLink]: www.google.com
 
