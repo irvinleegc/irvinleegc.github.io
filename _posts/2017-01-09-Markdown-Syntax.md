@@ -9,15 +9,15 @@ categories: posts
 ### **Header and paragraph**
 Use `` # `` to indicate header
 
-**Example in Markdown:**
-`#header1`
-#header 1
-`####header4####`
-####header4####
-`header2`
-`-------`
-header2
--------
+**Example in Markdown:**  
+`#header1`  
+#header 1  
+`####header4####`  
+####header4####  
+`header2`  
+`-------`  
+header2  
+-------  
 
 **Example in HTML:**
 ``` HTML
