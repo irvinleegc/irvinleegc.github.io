@@ -11,13 +11,13 @@ Use `` # `` to indicate header
 
 **Example in Markdown:**
 ```Markdown
-`#header1` 
-`####header4####`  
-`header2`  
-`-------`  
+#header1
+####header4####
+header2  
+-------
 ```
 
-#header 1  
+#header1  
 ####header4####  
 header2  
 -------  
@@ -39,31 +39,36 @@ Following paragraphs starts here.
 <p>Following paragraphs</p> <p>starts here.</p>
 
 ### **Emphasis**  
-Use single asterisk `` ` `` or single underscore ` _ `for _italic_.  
-Use double asterisks <code>``</code> or double underscores <code>__</code > for **bold**.  
+Use single asterisk `` ` `` or single underscore ` _ ` for _italic_.  
+Use double asterisks <code>``</code> or double underscores `__` for **bold**.  
 Use two tildes <code>~~ </code> for ~~strikethrough~~.  
 
 **Example in Markdown:**  
-`*italic*` *italic*  `_italic_` _italic_  
-`**bold**` **bold** `__bold__` __bold__
-`` ~~ strike~~ `` ~~strike~~
+```Markdown
+*italic* _italic_ **bold** __bold__ ~~strike~~
+```
+ *italic* _italic_ **bold** __bold__ ~~strike~~
 
 **Example in HTML:**
 ``` HTML
-``<em> italic </em>`` 
-``<strong> bold </strong>`` 
+<em> italic </em>
+<strong> bold </strong>
 ```
 <em> italic </em>
 <strong> bold </strong>
 
-But if you surround an `*` or `_` with spaces, it’ll be treated as a literal asterisk or underscore. To place an asterisk or underscore without the space, use the escape backslash character `\`
+But if you surround an `*` or `_` with spaces, it’ll be treated as a literal asterisk or underscore. To place an asterisk or underscore without the space, use the escape backslash character `\`.
 
 **Example in Markdown:**  
-` This is an asterisk * and this is an underscore _ `  
+```Markdow
+This is an asterisk * and this is an underscore _
+```
 This is an asterisk * and this is an underscore _  
 
 `These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_ `
 These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and **bold** and _italic_
+
+-------------------  
 
 ### **Table**
 Use pipe `|` to indicate column in table.  
