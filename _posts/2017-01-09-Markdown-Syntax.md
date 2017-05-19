@@ -38,6 +38,8 @@ Following paragraphs starts here.
 ```
 <p>Following paragraphs</p> <p>starts here.</p>
 
+-------------------  
+
 ### **Emphasis**  
 Use single asterisk `` ` `` or single underscore ` _ ` for _italic_.  
 Use double asterisks <code>``</code> or double underscores `__` for **bold**.  
@@ -76,11 +78,13 @@ Use minumal 3 dashes `---` to indicate header.
 Use colon `:` to indicate alignment.  
 
 **Example in Markdown:**
-<code>|No|Name|Team|
+```Markdown
+|No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
 |2|\*Jane\*|B|
-|3|Jake|\**F**|</code>
+|3|Jake|\**F**|
+```
 
 |No|Name|Team|
 |---:|:---|:---:|
@@ -88,6 +92,7 @@ Use colon `:` to indicate alignment.
 |2|*Jane*|B|
 |3|Jake|**F**|
 
+-------------------  
 
 ### **List**
 Use multiple rows of `*` `+` `-`to indicate a bullet list.  
@@ -137,6 +142,9 @@ To do list:
 <li>write a blog with markdown</li>
 </ol>
 
+
+-------------------  
+
 ### **Code**
 To indicate codes, use backtick <code>`</code>
 
@@ -173,12 +181,18 @@ To enable syntax highlight use tripple backticks <code>```</code> along with the
 < a href=http:www.google.com>google.com < /a\>
 ```
 
+-------------------  
+
 ### **Quotes or citations**
 Use `>` to indicate quotes / citations / indent.
 
 **Example in Markdown:**
-`> Quote of the day`
- > Quote of the day
+```Markdown
+> Quote of the day
+```
+> Quote of the day
+
+-------------------  
 
 ### **Link**
 
@@ -207,10 +221,15 @@ www.google.com
 [Google](www.google.com) inline link  
 [Google](www.google.com "Search Engine") inline link with title  
 Google link within number reference[1]  
+
 [1]: http://www.google.com  
+
 [Google] link within itself  
+
 [Google]: www.google.com  
-[anylink] as reference is case insensitive
+
+[anylink] as reference is case insensitive  
+
 [AnYLink]: www.google.com
 
 **Example in HTML:**  
@@ -219,19 +238,27 @@ Google link within number reference[1]
 ```
 <a href="http://www.google.com/">link</a>
 
+-------------------  
+
 ### **Email**  
 Create email address using angle brackets `< >`.  
 
-**Example in Markdown:**  
-`` email me at <email@address.com> ``  
+**Example in Markdown:**
+```Markdown
+email me at <email@address.com>
+```
 email me at <email@address.com>  
+
+-------------------  
 
 ### **Emoji :smile:**
 <https://www.emoji.codes/>
 
+-------------------  
 
 ### **Image**
 
+-------------------  
 
 ### **Backslash Escape**
 Use a backslash `\` before these special character to actually indicate that you are typing these characters.
