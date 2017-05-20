@@ -86,18 +86,18 @@ Use colon `:` to indicate alignment.
 
 **Example in Markdown:**
 ```Markdown
-| No | Name | Team |
-|---:|:---|:---:|
-| 1 | John | A |
-| 2 | _Jane_ | B |
-| 3 | Jake | \**F** |
+| No | Name | Team |  
+|---:|:---|:---:|  
+| 1 | John | A |  
+| 2 | _Jane_ | B |  
+| 3 | Jake | \**F** |  
 ```
 **Output:**  
-| No | Name | Team |
-|---:|:---|:---:|
-| 1 | John | A |
-| 2 | _Jane_ | B |
-| 3 | Jake | \**F** |
+| No | Name | Team |  
+|---:|:---|:---:|  
+| 1 | John | A |  
+| 2 | _Jane_ | B |  
+| 3 | Jake | \**F** |  
 
 -------------------  
 
@@ -169,7 +169,7 @@ To do list:
 -------------------  
 
 ### **Code**
-To indicate codes, use backtick <code> ` </code>.
+To indicate codes, use backtick <code>`</code>.
 
 **Example in Markdown:**  
 ``` Markdown
@@ -191,7 +191,7 @@ Any backtick within the double backticks will be treated as an actual backtick.
 **Example in Markdown:**  
 ```Markdown
 This is a `` ` `` backtick.
-`` These are `a bunch` of `b`a`c`k`t`i`c`k`s`. ``
+&#96;&#96; These are `a bunch` of `b`a`c`k`t`i`c`k`s`. &#96;&#96;
 ```
 **Output:**  
 This is a `` ` `` backtick.  
@@ -214,14 +214,14 @@ To enable syntax highlight or code snippet use tripple backticks <code>```</code
 
 **Example in Markdown:**  
 ```Markdown
-\`\`\`HTML
+&#96;&#96;&#96;HTML
 <a href=http:www.google.com>google.com </a>
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li>
 </ol>
-\`\`\`
+&#96;&#96;&#96;
 ```
 **Output:**  
 ```HTML
