@@ -11,14 +11,14 @@ Use `` # `` to indicate header
 
 **Example in Markdown:**
 ```Markdown
-#header1
-####header4####
+# header1
+#### header4 ####
 header2  
 -------
 ```
-
-#header1  
-####header4####  
+**Output:**  
+# header1  
+#### header4 ####  
 header2  
 -------  
 
@@ -42,13 +42,13 @@ Following paragraphs  starts here.
 ```
 **Output:**  
 <p>Following paragraphs</p> <p>starts here.</p>
-
+    
 -------------------  
 
 ### **Emphasis**  
 Use single asterisk `` ` `` or single underscore `` _ `` for _italic_.  
 Use double asterisks <code>``</code> or double underscores `__` for **bold**.  
-Use two tildes <code>~~ </code> for ~~strikethrough~~.  
+Use two tildes <code>~~</code> for ~~strikethrough~~.  
 
 **Example in Markdown:**  
 ```Markdown
@@ -86,18 +86,24 @@ Use colon `:` to indicate alignment.
 
 **Example in Markdown:**
 ```Markdown
-|No|Name|Team|
+| No | Name | Team |
 |---:|:---|:---:|
-|1|John|A|
-|2|_Jane_|B|
-|3|Jake|\**F**|
+| 1 | John | A |
+| 2 | _Jane_ | B |
+| 3 | Jake | \**F** |
 ```
 **Output:**  
 |No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
-|2|_Jane_|B|
+|2|Jane|B|
 |3|Jake|**F**|
+
+| No | Name | Team |
+|---:|:---|:---:|
+| 1 | John | A |
+| 2 | _Jane_ | B |
+| 3 | Jake | \**F** |
 
 -------------------  
 
