@@ -205,19 +205,32 @@ These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&
 **Output:**  
 This is a &#96; backtick. <br/>
 These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;.
-  
-  
-To enable syntax highlight use tripple backticks <code>```</code> along with the language.
+
+
+-------------------  
+
+### **Code snippet**
+To enable syntax highlight or code snippet use tripple backticks <code>```</code> along with the language.
 
 **Example in Markdown:**  
 ```Markdown
 \`\`\`HTML
-\`\` <a href=http:www.google.com>google.com </a> \`\`
+<a href=http:www.google.com>google.com </a>
+<ol>
+<li>learn markdown</li>
+<li>write a post with markdown</li>
+<li>write a blog with markdown</li>
+</ol>
 \`\`\`
 ```
 **Output:**  
 ```HTML
 <a href=http:www.google.com>google.com </a>
+<ol>
+<li>learn markdown</li>
+<li>write a post with markdown</li>
+<li>write a blog with markdown</li>
+</ol>
 ```
 
 -------------------  
