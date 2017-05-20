@@ -111,13 +111,17 @@ To do list:
 
 **Example in HTML:**
 ```HTML
-<ul><li>learn markdown</li>
+<ul>
+<li>learn markdown</li>
 <li>write a post with markdown</li>
-<li>write a blog with markdown</li></ul>
+<li>write a blog with markdown</li>
+</ul>
 ```
-<ul><li>learn markdown</li>
+<ul>
+<li>learn markdown</li>
 <li>write a post with markdown</li>
-<li>write a blog with markdown</li></ul>
+<li>write a blog with markdown</li>
+</ul>
  
 Use multiple rows of numbers (in or our of sequence) to indicate a numbered list.  
 **Example in Markdown:**  
@@ -152,11 +156,11 @@ To do list:
 -------------------  
 
 ### **Code**
-To indicate codes, use backtick <code> ` </code>
+To indicate codes, use backtick <code> ` </code>.
 
 **Example in Markdown:**  
 ``` Markdown
-This is a \`main()\` function.  
+This is a `main()` function.  
 ```
 This is a `main()` function.  
 
@@ -169,35 +173,41 @@ This is a <code>main()</code> function.
 Use double backticks to indicate a real a backtick `` ` ``.  
 Any backtick within the double backticks will be treated as an actual backtick.
 
-**Example in Markdown:**
+**Example in Markdown:**  
 ```Markdown
-his is a \`\` \` \`\` backtick.
-\`\` These are \`a bunch\` of \`b\`a\`c\`k\`t\`i\`c\`k\`s\`. \`\`
+his is a `` ` `` backtick.
+`` These are `a bunch` of `b`a`c`k`t`i`c`k`s`. ``
 ```
-This is a `` ` `` backtick.
-his is a \`\` \` \`\` backtick.
-\`\` These are \`a bunch\` of \`b\`a\`c\`k\`t\`i\`c\`k\`s\`. \`\`
-`` These are `a bunch`of `b`a`c`k`t`i`c`k`s`. ``
+This is a `` ` `` backtick.  
+`` These are `a bunch` of `b`a`c`k`t`i`c`k`s`. ``  
 
-**Example in HTML:**
+**Example in HTML:**  
+```HTML
 This is a &#96; backtick.
-<code>These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;. </code>
+These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;.
+```
+This is a &#96; backtick.
+These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;.
 
 
 To enable syntax highlight use tripple backticks <code>```</code> along with the language.
 
-**Example in Markdown:**
-<code>'''HTML
-< a href=http:www.google.com>google.com`<`/a\>```
-</code>
+**Example in Markdown:**  
+
+```Markdown
+\`\`\`HTML
+\`\` <a href=http:www.google.com>google.com </a> \`\`
+\`\`\`
+```
+
 ```HTML
-< a href=http:www.google.com>google.com < /a\>
+<a href=http:www.google.com>google.com </a>
 ```
 
 -------------------  
 
 ### **Quotes or citations**
-Use `>` to indicate quotes / citations / indent.
+Use `>` to indicate quotes / citations / indent.  
 
 **Example in Markdown:**
 ```Markdown
