@@ -255,7 +255,6 @@ Google link within number reference[1]
 **Output:**  
 http://www.google.com  
 www.google.com  
-<www.google.com>
 [Google](www.google.com) inline link  
 [Google](www.google.com "Search Engine") inline link with title  
 Google link within number reference[1]  
