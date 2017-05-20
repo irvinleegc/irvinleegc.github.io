@@ -108,12 +108,16 @@ Use multiple rows of `*` `+` `-`to indicate a bullet list.
 To do list:  
  + learn markdown  
  * write a post with markdown  
+     + write the first paragraph
+     * write the last paragragh
  - write a blog with markdown  
 ```
 **Output:**  
 To do list:  
  + learn markdown  
  * write a post with markdown  
+     + write the first paragraph
+     * write the last paragragh
  - write a blog with markdown  
 
 **Example in HTML:**
@@ -271,10 +275,12 @@ Google link within number reference[1]
 
 **Example in HTML:**  
 ```HTML
-<a href="http://www.google.com/">link</a>
+<a href="http://www.google.com/">Google</a> inline link <br />
+<a href="http://www.google.com/" title="Search Engine">Google</a> inline link with title <br />
 ```
 **Output:**  
-<a href="http://www.google.com/">link</a>
+<a href="http://www.google.com/">Google</a> inline link <br />
+<a href="http://www.google.com/" title="Search Engine">Google</a> inline link with title <br />
 
 -------------------  
 
