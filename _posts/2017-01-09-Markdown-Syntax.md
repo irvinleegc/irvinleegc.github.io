@@ -29,19 +29,21 @@ header2
 <h2>header2</h2>
 
 **Example in Markdown:**  
-`Following paragraphs starts here.`  
-Following paragraphs starts here.  
+```Markdown
+Following paragraphs  starts here.  
+```
+Following paragraphs  starts here.  
 
 **Example in HTML:**  
 ``` HTML
-`<p>Following paragraphs</p> <p>starts here.</p>`
+<p>Following paragraphs</p> <p>starts here.</p>
 ```
 <p>Following paragraphs</p> <p>starts here.</p>
 
 -------------------  
 
 ### **Emphasis**  
-Use single asterisk `` ` `` or single underscore ` _ ` for _italic_.  
+Use single asterisk `` ` `` or single underscore `` _ `` for _italic_.  
 Use double asterisks <code>``</code> or double underscores `__` for **bold**.  
 Use two tildes <code>~~ </code> for ~~strikethrough~~.  
 
@@ -64,17 +66,16 @@ But if you surround an `*` or `_` with spaces, it’ll be treated as a literal a
 **Example in Markdown:**  
 ```Markdow
 This is an asterisk * and this is an underscore _
+These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_
 ```
 This is an asterisk * and this is an underscore _  
-
-`These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_ `
-These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and **bold** and _italic_
+These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_  
 
 -------------------  
 
 ### **Table**
 Use pipe `|` to indicate column in table.  
-Use minumal 3 dashes `---` to indicate header.  
+Use minimum 3 dashes `---` to indicate header.  
 Use colon `:` to indicate alignment.  
 
 **Example in Markdown:**
@@ -89,7 +90,7 @@ Use colon `:` to indicate alignment.
 |No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
-|2|*Jane*|B|
+|2|\*Jane\*|B|
 |3|Jake|**F**|
 
 -------------------  
@@ -97,20 +98,22 @@ Use colon `:` to indicate alignment.
 ### **List**
 Use multiple rows of `*` `+` `-`to indicate a bullet list.  
 **Example in Markdown:**
-<code>To do list:
- + learn markdown
- * write a post with markdown
- - write a blog with markdown</code>
-To do list:
- + learn markdown
- * write a post with markdown
- - write a blog with markdown
+```Markdown
+To do list:  
+ + learn markdown  
+ * write a post with markdown  
+ - write a blog with markdown  
+```
+To do list:  
+ + learn markdown  
+ * write a post with markdown  
+ - write a blog with markdown  
 
 **Example in HTML:**
 ```HTML
-`` <ul><li>learn markdown</li>
+<ul><li>learn markdown</li>
 <li>write a post with markdown</li>
-<li>write a blog with markdown</li></ul>``
+<li>write a blog with markdown</li></ul>
 ```
 <ul><li>learn markdown</li>
 <li>write a post with markdown</li>
@@ -118,15 +121,19 @@ To do list:
  
 Use multiple rows of numbers (in or our of sequence) to indicate a numbered list.  
 **Example in Markdown:**  
-<code>To do list:
- 1. learn markdown
- 5. write a post with markdown
- 3. write a blog with markdown</code>  
+```Markdown
+To do list:  
+ 1. learn markdown  
+ 5. write a post with markdown  
+ 3. write a blog with markdown  
+ ```
  
-To do list:
- 1. learn markdown
- 3. write a post with markdown
- 3. write a blog with markdown
+To do list:  
+ 1. learn markdown  
+ 5. write a post with markdown  
+ 3. write a blog with markdown  
+
+-------------------  
 
 **Example in HTML:**
 ```HTML
@@ -142,28 +149,34 @@ To do list:
 <li>write a blog with markdown</li>
 </ol>
 
-
 -------------------  
 
 ### **Code**
-To indicate codes, use backtick <code>`</code>
+To indicate codes, use backtick <code> ` </code>
 
 **Example in Markdown:**  
+``` Markdown
 This is a \`main()\` function.  
+```
 This is a `main()` function.  
 
 **Example in HTML:**  
 ```HTML
-`This is a <code>main()</code> function.`
+This is a <code>main()</code> function.
 ```
 This is a <code>main()</code> function.  
 
-Use double backticks to indicate a real a backtick `` ` ``. Any backtick within the double backticks will be treated as an actual backtick.
+Use double backticks to indicate a real a backtick `` ` ``.  
+Any backtick within the double backticks will be treated as an actual backtick.
 
 **Example in Markdown:**
-<code>This is a \`\` \` \`\` backtick. </code>
+```Markdown
+his is a \`\` \` \`\` backtick.
+\`\` These are \`a bunch\` of \`b\`a\`c\`k\`t\`i\`c\`k\`s\`. \`\`
+```
 This is a `` ` `` backtick.
-<code> \`\` These are \`a bunch\` of \`b\`a\`c\`k\`t\`i\`c\`k\`s\`. \`\`</code>
+his is a \`\` \` \`\` backtick.
+\`\` These are \`a bunch\` of \`b\`a\`c\`k\`t\`i\`c\`k\`s\`. \`\`
 `` These are `a bunch`of `b`a`c`k`t`i`c`k`s`. ``
 
 **Example in HTML:**
