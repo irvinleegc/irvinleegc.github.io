@@ -26,18 +26,21 @@ header2
 ``` HTML
 <h2>header2</h2>
 ```
+**Output:**  
 <h2>header2</h2>
 
 **Example in Markdown:**  
 ```Markdown
 Following paragraphs  starts here.  
 ```
+**Output:**  
 Following paragraphs  starts here.  
 
 **Example in HTML:**  
 ``` HTML
 <p>Following paragraphs</p> <p>starts here.</p>
 ```
+**Output:**  
 <p>Following paragraphs</p> <p>starts here.</p>
 
 -------------------  
@@ -51,6 +54,7 @@ Use two tildes <code>~~ </code> for ~~strikethrough~~.
 ```Markdown
 *italic* _italic_ **bold** __bold__ ~~strike~~
 ```
+**Output:**  
  *italic* _italic_ **bold** __bold__ ~~strike~~
 
 **Example in HTML:**
@@ -58,6 +62,7 @@ Use two tildes <code>~~ </code> for ~~strikethrough~~.
 <em> italic </em>
 <strong> bold </strong>
 ```
+**Output:**  
 <em> italic </em>
 <strong> bold </strong>
 
@@ -68,6 +73,7 @@ But if you surround an `*` or `_` with spaces, it’ll be treated as a literal a
 This is an asterisk * and this is an underscore _
 These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_
 ```
+**Output:**  
 This is an asterisk * and this is an underscore _  
 These are \*asterisks\* using backslash and these are \_underscores\_ using backslash and may contain **bold** and _italic_  
 
@@ -83,14 +89,14 @@ Use colon `:` to indicate alignment.
 |No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
-|2|\*Jane\*|B|
+|2|_Jane_|B|
 |3|Jake|\**F**|
 ```
-
+**Output:**  
 |No|Name|Team|
 |---:|:---|:---:|
 |1|John|A|
-|2|\*Jane\*|B|
+|2|_Jane_|B|
 |3|Jake|**F**|
 
 -------------------  
@@ -104,6 +110,7 @@ To do list:
  * write a post with markdown  
  - write a blog with markdown  
 ```
+**Output:**  
 To do list:  
  + learn markdown  
  * write a post with markdown  
@@ -117,6 +124,7 @@ To do list:
 <li>write a blog with markdown</li>
 </ul>
 ```
+**Output:**  
 <ul>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
@@ -131,7 +139,7 @@ To do list:
  5. write a post with markdown  
  3. write a blog with markdown  
  ```
- 
+**Output:**  
 To do list:  
  1. learn markdown  
  5. write a post with markdown  
@@ -147,6 +155,7 @@ To do list:
 <li>write a blog with markdown</li>
 </ol>
 ```
+**Output:**  
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
@@ -162,12 +171,14 @@ To indicate codes, use backtick <code> ` </code>.
 ``` Markdown
 This is a `main()` function.  
 ```
+**Output:**  
 This is a `main()` function.  
 
 **Example in HTML:**  
 ```HTML
 This is a <code>main()</code> function.
 ```
+**Output:**  
 This is a <code>main()</code> function.  
 
 Use double backticks to indicate a real a backtick `` ` ``.  
@@ -175,31 +186,32 @@ Any backtick within the double backticks will be treated as an actual backtick.
 
 **Example in Markdown:**  
 ```Markdown
-his is a `` ` `` backtick.
+This is a `` ` `` backtick.
 `` These are `a bunch` of `b`a`c`k`t`i`c`k`s`. ``
 ```
+**Output:**  
 This is a `` ` `` backtick.  
-`` These are `a bunch` of `b`a`c`k`t`i`c`k`s`. ``  
+``These are `a bunch` of `b`a`c`k`t`i`c`k`s`.``  
 
 **Example in HTML:**  
 ```HTML
-This is a &#96; backtick.
+This is a &#96; backtick. <br/>
 These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;.
 ```
-This is a &#96; backtick.
+**Output:**  
+This is a &#96; backtick. <br/>
 These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&#96;s&#96;.
-
-
+  
+  
 To enable syntax highlight use tripple backticks <code>```</code> along with the language.
 
 **Example in Markdown:**  
-
 ```Markdown
 \`\`\`HTML
 \`\` <a href=http:www.google.com>google.com </a> \`\`
 \`\`\`
 ```
-
+**Output:**  
 ```HTML
 <a href=http:www.google.com>google.com </a>
 ```
@@ -213,13 +225,14 @@ Use `>` to indicate quotes / citations / indent.
 ```Markdown
 > Quote of the day
 ```
+**Output:**  
 > Quote of the day
 
 -------------------  
 
 ### **Link**
 
-URLs it self will automatically be converted into links, alternatively, we can create link using angle brackets `< >`.
+URL itself will automatically be converted into link, alternatively, we can create link using angle brackets `< >`.
 
 **Example in Markdown:**  
 ```Markdown
@@ -229,28 +242,29 @@ www.google.com
 [Google](www.google.com "Search Engine") inline link with title  
 Google link within number reference[1]  
 
-[1]: http://www.google.com  
+[1]: http://www.google.com
 
 [Google] link within itself  
 
-[Google]: www.google.com  
+[Google]: www.google.com
 
 [Anylink] as reference is case insensitive  
 
 [AnYLink]: www.google.com
 ```
-
+**Output:**  
 http://www.google.com  
 www.google.com  
+<www.google.com>
 [Google](www.google.com) inline link  
 [Google](www.google.com "Search Engine") inline link with title  
 Google link within number reference[1]  
 
-[1]: http://www.google.com  
+[1]: http://www.google.com
 
 [Google] link within itself  
 
-[Google]: www.google.com  
+[Google]: www.google.com
 
 [Anylink] as reference is case insensitive  
 
@@ -260,6 +274,7 @@ Google link within number reference[1]
 ```HTML
 <a href="http://www.google.com/">link</a>
 ```
+**Output:**  
 <a href="http://www.google.com/">link</a>
 
 -------------------  
@@ -271,6 +286,7 @@ Create email address using angle brackets `< >`.
 ```Markdown
 email me at <email@address.com>
 ```
+**Output:**  
 email me at <email@address.com>  
 
 -------------------  
@@ -287,6 +303,22 @@ email me at <email@address.com>
 ### **Backslash Escape**
 Use a backslash `\` before these special character to actually indicate that you are typing these characters.
 
+**Example in Markdown:**
+```Markdown
+\\ backslash  
+\` backtick  
+\* asterisk  
+\_ underscore  
+\{\} curly braces  
+\[\] square brackets  
+\(\) parentheses  
+\# hash mark  
+\+ plus sign  
+\- minus sign (hyphen)  
+\. dot  
+\! exclamation mark  
+```
+**Output:**  
 \\ backslash  
 \` backtick  
 \* asterisk  
