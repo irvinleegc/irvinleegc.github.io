@@ -93,12 +93,6 @@ Use colon `:` to indicate alignment.
 | 3 | Jake | \**F** |
 ```
 **Output:**  
-|No|Name|Team|
-|---:|:---|:---:|
-|1|John|A|
-|2|Jane|B|
-|3|Jake|**F**|
-
 | No | Name | Team |
 |---:|:---|:---:|
 | 1 | John | A |
