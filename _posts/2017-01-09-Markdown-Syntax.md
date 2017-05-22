@@ -2,7 +2,7 @@
 layout: post
 title: Markdown Syntax
 cover: cover.jpg
-categories: [syntax] [markdown]  
+categories: [syntax]; [markdown]  
 google_analytics: TRUE
 comments: TRUE
 ---
