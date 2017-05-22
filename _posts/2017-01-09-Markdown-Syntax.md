@@ -32,7 +32,7 @@ header2
 -------------------  
 
 ### **Line Break**
-To add line break, use to consequtive blank at the end of the line.  
+To add line break, use two consequtive blanks at the end of the line.  
 **Example in Markdown:**  
 ```Markdown
 Same 
