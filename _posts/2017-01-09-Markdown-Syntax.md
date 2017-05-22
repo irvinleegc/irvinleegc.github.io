@@ -355,9 +355,9 @@ T&C apply.
 
 [T&C]: Terms and Conditions
 ```
-T&C apply.
+TnC apply.
 
-*[T&C]: Terms and Conditions
+*[TnC]: Terms and Conditions
 
 -------------------  
 
@@ -418,3 +418,5 @@ Use a backslash `\` before these special character to actually indicate that you
 \- minus sign (hyphen)  
 \. dot  
 \! exclamation mark  
+
+-------------------  
