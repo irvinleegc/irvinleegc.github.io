@@ -3,7 +3,9 @@ layout: post
 title: Markdown Syntax
 cover: cover.jpg
 date:   2017-01-09 12:00:00
-categories: posts
+categories: [syntax] [markdown]
+google_analytics: TRUE
+comments: TRUE
 ---
 
 ### **Header**
