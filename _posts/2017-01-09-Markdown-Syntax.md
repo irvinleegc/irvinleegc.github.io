@@ -35,10 +35,16 @@ header2
 To add line break, use to consequtive blank at the end of the line.  
 **Example in Markdown:**  
 ```Markdown
+Same 
+line  
+
 Following paragraphs  
 starts here.  
 ```
 **Output:**  
+Same 
+line  
+
 Following paragraphs  
 starts here.  
 
@@ -52,8 +58,8 @@ starts here.
 -------------------  
 
 ### **Emphasis**  
-Use single asterisk `` ` `` or single underscore `` _ `` for _italic_.  
-Use double asterisks <code>``</code> or double underscores `__` for **bold**.  
+Use single asterisk `` * `` or single underscore `` _ `` for _italic_.  
+Use double asterisks <code>**</code> or double underscores `__` for **bold**.  
 Use two tildes <code>~~</code> for ~~strikethrough~~.  
 
 **Example in Markdown:**  
