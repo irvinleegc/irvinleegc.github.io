@@ -359,9 +359,10 @@ T&C apply.
 
 [T&C]: Terms and Conditions
 ```
-T&C apply.
+**Output:**  
+T&C apply.  
 
-*[T&C]: Terms and Conditions
+*[T&C]: Terms and Conditions  
 
 -------------------  
 
