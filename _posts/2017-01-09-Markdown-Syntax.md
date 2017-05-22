@@ -352,16 +352,16 @@ Terms and Conditions[^1] apply.
 [^1]: Just kidding.  
 
 ### **Abbreviations**  
-Mouse over abbreaviation to show the full form.
+Mouse over abbreaviation to show the full form.  
 **Example in Markdown:**  
 ```Markdown
 T&C apply.
 
 [T&C]: Terms and Conditions
 ```
-TnC apply.
+T&C apply.
 
-*[TnC]: Terms and Conditions
+*[T&C]: Terms and Conditions
 
 -------------------  
 
