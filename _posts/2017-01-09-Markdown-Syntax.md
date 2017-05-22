@@ -345,11 +345,13 @@ Create footnote using `[^]`.
 **Example in Markdown:**
 ```Markdown
 Terms and Conditions[^1] apply.  
+
 [^1]: Just kidding.
 ```
 **Output:**  
 Terms and Conditions[^1] apply.  
-[^1]: Just kidding.  
+
+[^1]: Just kidding.
 
 ### **Abbreviations**  
 Mouse over abbreaviation to show the full form.  
