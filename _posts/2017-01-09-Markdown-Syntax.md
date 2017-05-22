@@ -7,13 +7,13 @@ google_analytics: TRUE
 comments: TRUE
 ---
 
-### **Header**
+### **Header**  
 Use `` # `` to indicate header
 **Example in Markdown:**
 ```Markdown
 # header1  
 #### header4 ####  
-header2  
+header2
 -------  
 ```
 **Output:**  
@@ -32,7 +32,7 @@ header2
 -------------------  
 
 ### **Line Break**
-To add line break, use to consequtive blank at the end of the line.
+To add line break, use to consequtive blank at the end of the line.  
 **Example in Markdown:**  
 ```Markdown
 Following paragraphs  
@@ -93,14 +93,14 @@ Use colon `:` to indicate alignment.
 **Example in Markdown:**
 ```Markdown
 |No|Name|Team|
-|---:|:---|:---:|
+|----:|:----|:----:|
 |1|John|A|
 |2|Jane|B|
 |3|Jake|\**F**|
 ```
 **Output:**  
 |No|Name|Team|
-|---:|:---|:---:|
+|----:|:----|:----:|
 |1|John|A|
 |2|Jane|B|
 |3|Jake|\**F**|
@@ -216,7 +216,7 @@ These are &#96;a bunch&#96; of &#96;b&#96;a&#96;c&#96;k&#96;t&#96;i&#96;c&#96;k&
 -------------------  
 
 ### **Code snippet**
-To enable syntax highlight or code snippet use tripple backticks <code>```</code> along with the language.
+To enable code snippet use tripple backticks <code>```</code> or or tripple tidles <code>~~~</code>. Indicating the language after tripple backticks will enable syntax highlight.  
 
 **Example in Markdown:**  
 ```Markdown
@@ -230,15 +230,16 @@ To enable syntax highlight or code snippet use tripple backticks <code>```</code
 &#96;&#96;&#96;
 ```
 
-~~~~
+``
+~~~
 <a href=http:www.google.com>google.com </a>
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li>
 </ol>
-~~~~
-
+~~~
+``
 
 **Output:**  
 ```HTML
@@ -250,15 +251,14 @@ To enable syntax highlight or code snippet use tripple backticks <code>```</code
 </ol>
 ```
 
-
-~~~~
+~~~
 <a href=http:www.google.com>google.com </a>
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li>
 </ol>
-~~~~
+~~~
 -------------------  
 
 ### **Quotes or citations**
