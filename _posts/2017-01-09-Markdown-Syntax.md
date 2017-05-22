@@ -6,15 +6,15 @@ date:   2017-01-09 12:00:00
 categories: posts
 ---
 
-### **Header and paragraph**
+### **Header**
 Use `` # `` to indicate header
 
 **Example in Markdown:**
 ```Markdown
-# header1
-#### header4 ####
+# header1  
+#### header4 ####  
 header2  
--------
+-------  
 ```
 **Output:**  
 # header1  
@@ -29,12 +29,18 @@ header2
 **Output:**  
 <h2>header2</h2>
 
+-------------------  
+
+### **Paragraph**
+To start a new paragraph, use to consequtive blank at the end of the line.
 **Example in Markdown:**  
 ```Markdown
-Following paragraphs  starts here.  
+Following paragraphs  
+starts here.  
 ```
 **Output:**  
-Following paragraphs  starts here.  
+Following paragraphs  
+starts here.  
 
 **Example in HTML:**  
 ``` HTML
