@@ -10,7 +10,6 @@ comments: TRUE
 
 ### **Header**
 Use `` # `` to indicate header
-
 **Example in Markdown:**
 ```Markdown
 # header1  
@@ -33,8 +32,8 @@ header2
 
 -------------------  
 
-### **Paragraph**
-To start a new paragraph, use to consequtive blank at the end of the line.
+### **Line Break**
+To add line break, use to consequtive blank at the end of the line.
 **Example in Markdown:**  
 ```Markdown
 Following paragraphs  
@@ -222,15 +221,26 @@ To enable syntax highlight or code snippet use tripple backticks <code>```</code
 
 **Example in Markdown:**  
 ```Markdown
-`&#96;&#96;HTML
+&#96;&#96;&#96;HTML
 <a href=http:www.google.com>google.com </a>
 <ol>
 <li>learn markdown</li>
 <li>write a post with markdown</li>
 <li>write a blog with markdown</li>
 </ol>
-`&#96;&#96;
+&#96;&#96;&#96;
 ```
+
+~~~~
+<a href=http:www.google.com>google.com </a>
+<ol>
+<li>learn markdown</li>
+<li>write a post with markdown</li>
+<li>write a blog with markdown</li>
+</ol>
+~~~~
+
+
 **Output:**  
 ```HTML
 <a href=http:www.google.com>google.com </a>
@@ -241,6 +251,15 @@ To enable syntax highlight or code snippet use tripple backticks <code>```</code
 </ol>
 ```
 
+
+~~~~
+<a href=http:www.google.com>google.com </a>
+<ol>
+<li>learn markdown</li>
+<li>write a post with markdown</li>
+<li>write a blog with markdown</li>
+</ol>
+~~~~
 -------------------  
 
 ### **Quotes or citations**
@@ -268,7 +287,7 @@ Quote of the day
 
 ### **Link**
 
-URL itself will automatically be converted into link, alternatively, we can create link using angle brackets `< >`.
+URL itself will automatically be converted into link, alternatively, we can create link using `[]()`.
 
 **Example in Markdown:**  
 ```Markdown
@@ -316,6 +335,33 @@ Google link within number reference[1]
 
 -------------------  
 
+### **Footnote**  
+Create footnote using `[^]`.
+**Example in Markdown:**
+```Markdown
+Terms and Conditions apply[^1].
+
+[^1]: Just kidding.
+```
+**Output:**  
+Terms and Conditions apply[^1].
+
+[^1]: Just kidding.
+
+### **Abbreviations**  
+
+**Example in Markdown:**
+```Markdown
+T&C applies.
+
+[T&C]: Terms and Conditions
+```
+T&C applies.
+
+*[T&C]: Terms and Conditions
+
+-------------------  
+
 ### **Email**  
 Create email address using angle brackets `< >`.  
 
@@ -334,6 +380,11 @@ email me at <email@address.com>
 -------------------  
 
 ### **Image**
+
+**Example in Markdown:**
+```Markdown
+[![Image Alt Text](/path/to/image)](path/to/linked/page)
+```
 
 -------------------  
 
