@@ -341,20 +341,18 @@ Google link within number reference[1]
 -------------------  
 
 ### **Footnote**  
-Create footnote using `[^]`.
+Create footnote using `[^]`.  
 **Example in Markdown:**
 ```Markdown
 Terms and Conditions[^1] apply.
-
 [^1]: Just kidding.
 ```
 **Output:**  
 Terms and Conditions[^1] apply.
-
-[^1]: Just kidding.
+[^1]: Just kidding.  
 
 ### **Abbreviations**  
-
+Mouse over
 **Example in Markdown:**  
 ```Markdown
 T&C apply.
