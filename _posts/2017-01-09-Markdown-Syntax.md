@@ -339,24 +339,24 @@ Google link within number reference[1]
 Create footnote using `[^]`.
 **Example in Markdown:**
 ```Markdown
-Terms and Conditions apply[^1].
+Terms and Conditions[^1] apply.
 
 [^1]: Just kidding.
 ```
 **Output:**  
-Terms and Conditions apply[^1].
+Terms and Conditions[^1] apply.
 
 [^1]: Just kidding.
 
 ### **Abbreviations**  
 
-**Example in Markdown:**
+**Example in Markdown:**  
 ```Markdown
-T&C applies.
+T&C apply.
 
 [T&C]: Terms and Conditions
 ```
-T&C applies.
+T&C apply.
 
 *[T&C]: Terms and Conditions
 
