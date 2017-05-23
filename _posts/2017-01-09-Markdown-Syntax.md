@@ -8,8 +8,8 @@ comments: TRUE
 ---
 
 ### **Header**  
-Use `` # `` to indicate header
-**Example in Markdown:**
+Use `` # `` to indicate header  
+**Example in Markdown:**  
 ```Markdown
 # header1  
 #### header4 ####  
@@ -19,7 +19,7 @@ header2
 **Output:**  
 # header1  
 #### header4 ####  
-header2  
+header2
 -------  
 
 **Example in HTML:**
@@ -99,17 +99,17 @@ Use colon `:` to indicate alignment.
 **Example in Markdown:**
 ```Markdown
 |No|Name|Team|
-|----:|:----|:----:|
+|---:|:---|:---:|
 |1|John|A|
 |2|Jane|B|
-|3|Jake|\**F**|
+|3|Jake|F|
 ```
 **Output:**  
 |No|Name|Team|
-|----:|:----|:----:|
+|---:|:---|:---:|
 |1|John|A|
 |2|Jane|B|
-|3|Jake|\**F**|
+|3|Jake|F|
 
 -------------------  
 
@@ -236,7 +236,6 @@ To enable code snippet use tripple backticks <code>```</code> or or tripple tidl
 &#96;&#96;&#96;
 ```
 
-``
 ~~~
 <a href=http:www.google.com>google.com </a>
 <ol>
@@ -245,7 +244,7 @@ To enable code snippet use tripple backticks <code>```</code> or or tripple tidl
 <li>write a blog with markdown</li>
 </ol>
 ~~~
-``
+
 
 **Output:**  
 ```HTML
