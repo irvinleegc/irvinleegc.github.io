@@ -3,6 +3,7 @@ layout: post
 title: Markdown Syntax
 cover: cover.jpg
 categories: [syntax]
+excerpt : A post on markdown syntax
 google_analytics: TRUE
 comments: TRUE
 ---
