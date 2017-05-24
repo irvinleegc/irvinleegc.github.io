@@ -1,9 +1,11 @@
 # Site settings
 title: Irvin's GitHub Pages
 email: 
-description: "Hello World!"
+description: "Irvin's GitHub Pages"
 baseurl: ""
 url: "http://irvinleegc.github.io"
+
+author: Irvin Lee
 twitter_username: _irvinleegc_
 github_username:  irvinleegc
 linkedin_username:  irvinlee
