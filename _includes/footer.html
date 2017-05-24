@@ -1,16 +1,12 @@
 <footer class="site-footer">
-
   <div class="wrap">
-
     <!-- <h2 class="footer-heading">{{ site.title }}</h2> -->
-
     <div class="footer-col-1 column">
       <ul>
         <li>{{ site.title }}</li>
         <!-- <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
       </ul>
     </div>
-
     <div class="footer-col-2 column">
       <ul>
         {% if site.github_username %}
@@ -30,8 +26,7 @@
               </svg>
             </span>
            <!-- <span class="username">{{ site.github_username }}</span> -->
-          </a>
-        {% endif %}
+          </a>{% endif %}
         {% if site.twitter_username %}
           <a href="https://twitter.com/{{ site.twitter_username }}" title="Twitter">
             <span class="icon twitter">
@@ -47,8 +42,7 @@
               </svg>
             </span>
             <!-- <span class="username">{{ site.twitter_username }}</span> -->
-          </a>
-        {% endif %}        
+          </a>{% endif %}        
         {% if site.linkedin_username %}
           <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
             <span class="icon linkedin">
@@ -57,14 +51,11 @@
               </svg>
             </span>
             <!-- <span class="username">{{ site.linkedin_username }}</span> -->
-          </a>
-        {% endif %}
+          </a>{% endif %}
       </ul>
     </div>
-
     <div class="footer-col-3 column">
       <p class="text">{{ site.description }}</p>
     </div>
-
   </div>
 </footer>
