@@ -3,7 +3,10 @@ layout: post
 title: Transport or Copy SAP Layout for ALV Report
 cover: cover.jpg
 date:   2017-05-01 12:00:00
-categories: SAP
+categories: [SAP]
+excerpt : SAP ALV Layout and Transport Request
+google_analytics: TRUE
+comments: TRUE
 ---
 
 ## Transport SAP Layout for ALV report ##  
