@@ -19,7 +19,7 @@ On the pop up screen, enter a transport number to include the layout into the tr
 ## Copy SAP Layout for ALV report across client ##  
 Typical example would be to have the ALV layout created in golden client. However since it's likely to that no transaction / master data being created in golden client, executing the ALV report would not be able to generate any ALV output.  
   
-The walk around is as follows:  
+The walk around as follows:  
 ### Method 1 ###  
 Create the Variant on a different client on the same system example client 200 or 300.  
 Include the transport in a transport number in client 200 or 300.  
