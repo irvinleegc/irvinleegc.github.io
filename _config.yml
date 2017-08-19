@@ -1,27 +1,22 @@
-# Site settings
 title: Irvin's GitHub Pages
 email: 
-description: Man's Search for meaning.. of Technology
-baseurl: ""
-url: "http://irvinleegc.github.io"
+description: Man's search for meaning.. of Technology
+url: "https://irvinleegc.github.io/"
+baseurl: "flex"
 
-author: Irvin Lee
 twitter_username: _irvinleegc_
 github_username:  irvinleegc
-linkedin_username:  irvinlee
+linkedin_username: irvinlee
 disqus-shortname: irvinleegc-github-io
 google_analytics: UA-93472024-1
 
-
-# Build settings
-markdown: kramdown
 permalink: pretty
 
-highlighter: rouge
+markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
-
+  
 gems:
   - jemoji

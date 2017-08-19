@@ -1,0 +1,33 @@
+<div class="content" id="home">
+  <!-- Side -->
+  <div id="sidebar-button">
+    <img src="/images/sidebar-button.png">
+  </div>
+  <!-- Post Header -->
+  <div id="post-info">
+    <div id="cover-photo-container">
+      <img id="cover-photo" src="/images/{{ page.cover }}">
+    </div>
+    <div id="info-container">
+      <h1 id="title">{{ page.title }}</h1>
+      <span id="date">{{ page.date | date_to_string }}</span>
+    </div>
+  </div>
+  <!-- Post Content -->
+  <div class="post">
+    {{ content }}
+  </div>
+  <!-- Post Footer -->
+  <div class="colophon">
+    <p>
+      <span id="pub-date">Published on {{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
+      <span id="social">Find me on
+	  	<a href="https://twitter.com/{{ site.twitter_username }}" >Twitter</a> <span class="separator">&bull;</span>
+        <a href="https://github.com/{{ site.github_username }}" >GitHub</a> <span class="separator">&bull;</span>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="footer-link">LinkedIn</a> !
+	  </span>
+    </p>
+  </div>
+  {% include social-share.html %}
+  {% if page.comments %}{% include disqus.html %}{% endif %}
+</div>
