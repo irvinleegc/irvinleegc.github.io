@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SAP Authorization Role : Master Role, Derive role and Org level Authorization Field
+title: SAP Authorization - Master Role, Derive role and Org level Auth Field
 cover: cover.jpg
 categories: SAP
 excerpt : A post on master role, derive role and organization level authorization field.
